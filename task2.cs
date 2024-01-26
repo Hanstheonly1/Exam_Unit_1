@@ -1,17 +1,21 @@
-// Your program should start at this line.
-/*
-Example:
-Move();
-Move();
-Move();
-Turn();
-Move();
-Move();
-Turn();
-Turn();
-Turn();
-Move();
-*/
+
+while(AtGoal = false)
+{
+    if(Peek = false)
+    {
+        Turn();
+        Move();
+    }
+    else if(Trail = true)
+    {
+        Turn();
+        Move();
+    }
+    else
+    {
+        Move();
+    }
+}
 
 
 #region Basic functions
@@ -26,6 +30,12 @@ void Move()
 void Turn()
 {
     // Turns the car 90 deg clockwise.
+}
+
+bool Trail()
+{
+    // Returns true if you turn to a cell you have already been on.
+    return true; // Just a placeholder value. 
 }
 
 bool Peek()
